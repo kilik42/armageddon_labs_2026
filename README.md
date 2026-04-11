@@ -83,7 +83,7 @@ Evidence:
 
 Initial failure:
 - CloudFront returned 502/504 errors for both static and API endpoints  
-- Example shown in logs → :contentReference[oaicite:0]{index=0}  
+- Example shown in logs
 
 Root cause:
 - ALB worked directly
@@ -95,7 +95,7 @@ Validation:
 - CloudFront distribution confirmed
 - DNS correctly pointed to CloudFront  
 
-Configuration and validation steps → :contentReference[oaicite:1]{index=1}  
+Configuration and validation steps 
 
 ---
 
@@ -111,7 +111,7 @@ Highlights:
 - Separate Terraform configurations per region
 - Includes VPC, subnets, ALB, ASG, and RDS
 
-Repository structure evidence → :contentReference[oaicite:2]{index=2}  
+Repository structure evidence 
 
 ---
 
