@@ -89,7 +89,7 @@ resource "aws_acm_certificate_validation" "app_cert_validation" {
 }
 
 
-# ALIAS record: app → ALB
+# ALIAS record: app → ALB # this didn't work 
 
 # resource "aws_route53_record" "app_alias" {
 #   zone_id = local.zone_id
