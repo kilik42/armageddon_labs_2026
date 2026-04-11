@@ -1,6 +1,6 @@
 # Armageddon Labs 2026
 
-A cloud infrastructure and distributed systems project demonstrating AWS deployment, networking, observability, and edge delivery using CloudFront and WAF. My deliverables as far as visual evidence of task completion are highlighted/linked in each section below
+This is my running log of everything I built for the Armageddon Labs project — EC2, RDS, ALB, CloudFront, WAF, SSM, and all the debugging that came with it. Each section links to the screenshots/PDFs I submitted as proof of the work. Nothing fancy, just what I actually deployed and validated.
 
 ---
 
