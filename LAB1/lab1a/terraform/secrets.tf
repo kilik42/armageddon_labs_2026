@@ -3,7 +3,9 @@
 resource "random_password" "db_password" {
   length           = 20
   special          = true
-  override_special = "!#$%&*()-_=+[]{}<>:?"
+  override_special = "!#$%&*()-_=+[]{}<>:?" 
+  # i am intentionally excluding some special chars that can cause issues in shell commands or URLs, since the app will use this password in a connection string. mgiht have been overcautious but better safe than sorry in a learning environment!
+  #might have to come back and fix this later
 }
 
 # Secrets Manager container for the database credentials.
@@ -23,6 +25,7 @@ resource "aws_secretsmanager_secret_version" "db_secret_value" {
   secret_id = aws_secretsmanager_secret.db_secret.id
 
   secret_string = jsonencode({
+    # make sure to check and see if this code is working correctly after the lab is done, since the app needs to be able to parse this JSON and extract the values. if the keys or structure are off, it could cause runtime errors when the app tries to connect to the DB.
     username = var.db_username
     password = random_password.db_password.result
     host     = aws_db_instance.lab1_db.address
