@@ -1,0 +1,27 @@
+[
+  {
+    "check": "ALB exists",
+    "passed": true,
+    "details": "lab1-redone-alb"
+  },
+  {
+    "check": "WAF Web ACL exists",
+    "passed": true,
+    "details": "lab1-redone-waf"
+  },
+  {
+    "check": "WAF is associated with ALB",
+    "passed": true,
+    "details": "lab1-redone-waf -> lab1-redone-alb"
+  },
+  {
+    "check": "CloudWatch dashboard exists",
+    "passed": true,
+    "details": "lab1-redone-dashboard"
+  },
+  {
+    "check": "CloudWatch dashboard has widgets",
+    "passed": true,
+    "details": "Widget count: 6"
+  }
+]
