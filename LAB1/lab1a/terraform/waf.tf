@@ -17,7 +17,7 @@ resource "aws_wafv2_web_acl" "app_waf" {
     priority = 1
 
     override_action {
-      none {}# I want the default behavior of the managed rule group, which is to block requests that match the rules and allow requests that don't match.
+      none {} # I want the default behavior of the managed rule group, which is to block requests that match the rules and allow requests that don't match.
     }
 
     statement {
