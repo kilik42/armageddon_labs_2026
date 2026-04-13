@@ -1,0 +1,30 @@
+Lab 1A = secure working app stack
+Lab 1B = operations / alerting / incident response
+
+Lab 1C should feel like:
+
+hardening the public entry layer and adding stronger security/visibility around the app
+
+
+Lab 1A proved:
+
+    I can build it
+
+Lab 1B proved:
+
+    I can monitor and react to failures
+
+Lab 1C should prove:
+
+    I can protect and expose the app more like a real production service
+
+
+Lab 1C is the place for
+WAF
+ALB security polish
+dashboarding
+ALB access logs
+WAF logging
+possibly tighter ingress behavior
+
+In Lab 1C,  I focused on the public-facing side of the stack. I added a WAF in front of the ALB, created a CloudWatch dashboard to centralize visibility, and enabled access logging so the ingress layer had better security and auditability.
