@@ -7,3 +7,11 @@ EC2 Flask app
 Secrets Manager + Parameter Store
   
 RDS
+
+monitor, manage, and respond to that system once it’s running.
+ detect when it breaks?
+ alert operators?
+manage runtime config cleanly?
+support troubleshooting / incident response?
+validate operational controls?
+Lab 1B = Operate the System

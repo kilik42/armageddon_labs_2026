@@ -75,3 +75,9 @@ variable "vpc_cidr" {
   type        = string
   default     = "10.10.0.0/16"
 }
+
+# Email address that receives CloudWatch/SNS alert notifications.
+variable "alert_email" {
+  description = "Email address for operational alert notifications"
+  type        = string
+}
