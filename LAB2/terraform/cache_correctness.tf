@@ -3,9 +3,9 @@
 resource "aws_cloudfront_cache_policy" "static_cache_policy" {
   name        = "lab2-static-cache-policy"
   comment     = "Cache policy for static LAB2 content"
-  default_ttl = 86400 # 1 day
+  default_ttl = 86400    # 1 day
   max_ttl     = 31536000 # 1 year
-  min_ttl     = 0 # allow cache to be bypassed if needed
+  min_ttl     = 0        # allow cache to be bypassed if needed
 
   parameters_in_cache_key_and_forwarded_to_origin {
     cookies_config {
