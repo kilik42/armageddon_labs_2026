@@ -3,21 +3,21 @@
 resource "aws_cloudfront_cache_policy" "static_cache_policy" {
   name        = "lab2-static-cache-policy"
   comment     = "Cache policy for static LAB2 content"
-  default_ttl = 86400
-  max_ttl     = 31536000
-  min_ttl     = 0
+  default_ttl = 86400 # 1 day
+  max_ttl     = 31536000 # 1 year
+  min_ttl     = 0 # allow cache to be bypassed if needed
 
   parameters_in_cache_key_and_forwarded_to_origin {
     cookies_config {
-      cookie_behavior = "none"
+      cookie_behavior = "none" # static content does not need cookies, and this allows more cache hits by ignoring irrelevant cookies
     }
 
     headers_config {
-      header_behavior = "none"
+      header_behavior = "none" # static content does not need headers, and this allows more cache hits by ignoring irrelevant headers
     }
 
     query_strings_config {
-      query_string_behavior = "none"
+      query_string_behavior = "none" # static content does not need query strings, and this allows more cache hits by ignoring irrelevant query strings
     }
 
     enable_accept_encoding_gzip   = true
@@ -36,15 +36,15 @@ resource "aws_cloudfront_cache_policy" "dynamic_no_cache_policy" {
 
   parameters_in_cache_key_and_forwarded_to_origin {
     cookies_config {
-      cookie_behavior = "none"
+      cookie_behavior = "none" # dynamic content does not need cookies, and this allows more cache hits by ignoring irrelevant cookies
     }
 
     headers_config {
-      header_behavior = "none"
+      header_behavior = "none" # dynamic content does not need headers, and this allows more cache hits by ignoring irrelevant headers
     }
 
     query_strings_config {
-      query_string_behavior = "none"
+      query_string_behavior = "none" # dynamic content does not need query strings, and this allows more cache hits by ignoring irrelevant query strings
     }
   }
 }
