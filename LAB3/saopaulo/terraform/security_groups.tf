@@ -55,3 +55,5 @@ resource "aws_security_group" "app_sg" {
     Name = "${local.project_name}-app-sg"
   })
 }
+
+# doing the tokyo providers next before finishing the app instance and target group attachment so i can test the region in isolation before adding more pieces.
