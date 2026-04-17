@@ -1,0 +1,52 @@
+[
+  {
+    "check": "Primary TGW exists",
+    "passed": true,
+    "details": "tgw-015f884dd1ca85ba6"
+  },
+  {
+    "check": "Primary TGW default route table exists",
+    "passed": true,
+    "details": "tgw-rtb-0eaf01638bad54b3a"
+  },
+  {
+    "check": "Secondary TGW exists",
+    "passed": true,
+    "details": "tgw-0fd17133d03d454a6"
+  },
+  {
+    "check": "Secondary TGW default route table exists",
+    "passed": true,
+    "details": "tgw-rtb-0d6dccccce9da1dff"
+  },
+  {
+    "check": "Primary VPC attachment exists",
+    "passed": true,
+    "details": "tgw-attach-023aa0d5230e2c27b (available)"
+  },
+  {
+    "check": "Secondary VPC attachment exists",
+    "passed": true,
+    "details": "tgw-attach-0e2ef3a2659a5dd24 (available)"
+  },
+  {
+    "check": "TGW peering attachment exists",
+    "passed": true,
+    "details": "tgw-attach-0ba46c5b8a952e7a8"
+  },
+  {
+    "check": "TGW peering attachment state is available",
+    "passed": true,
+    "details": "available"
+  },
+  {
+    "check": "Primary TGW route to Sao Paulo exists",
+    "passed": true,
+    "details": "10.30.0.0/16 -> tgw-attach-0ba46c5b8a952e7a8"
+  },
+  {
+    "check": "Secondary TGW route to Primary exists",
+    "passed": true,
+    "details": "10.10.0.0/16 -> tgw-attach-0ba46c5b8a952e7a8"
+  }
+]

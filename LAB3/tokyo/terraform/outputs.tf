@@ -6,7 +6,7 @@ output "tgw_id" {
 }
 
 # The TGW attachment ID for the primary VPC is needed in the secondary region to create the peering attachment, so we output it here.
-output "primary_attachment_id" {
-  description = "Primary-region VPC attachment ID"
-  value       = aws_ec2_transit_gateway_vpc_attachment.primary_attachment.id
+output "peering_attachment_id" {
+  description = "TGW peering attachment ID from primary to Sao Paulo"
+  value       = aws_ec2_transit_gateway_peering_attachment.to_saopaulo.id
 }
