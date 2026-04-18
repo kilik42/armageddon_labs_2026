@@ -63,6 +63,12 @@ Instead of manual screenshots alone, I used Python scripts to validate the state
 
 ---
 
+
+## Infrastructure Architecture
+![Armageddon Labs 2026 Diagram](https://raw.githubusercontent.com/kilik42/armageddon_labs_2026/refactor/lab-redesign/lab1-3.png)
+
+---
+
 ## Old  Deliverables (in the docs folder) / This space below shows only cli evidence and aws console evidence. The python evidence is up above.
 
 ### 1A – EC2 + RDS Application
